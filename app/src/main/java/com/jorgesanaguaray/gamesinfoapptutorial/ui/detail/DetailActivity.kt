@@ -65,8 +65,8 @@ class DetailActivity : AppCompatActivity() {
 
         }
 
-        detailViewModel.nestedScrollViewVisibility.observe(this) {
-            binding.mNestedScrollView.visibility = if (it) View.VISIBLE else View.GONE
+        detailViewModel.scrollViewVisibility.observe(this) {
+            binding.mScrollView.visibility = if (it) View.VISIBLE else View.GONE
         }
 
         detailViewModel.textViewNoInternetVisibility.observe(this) {

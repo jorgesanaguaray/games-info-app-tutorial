@@ -20,8 +20,8 @@ class DetailViewModel @Inject constructor(private val getGameByIdUseCase: GetGam
     private val _game = MutableLiveData<SpecificGameItem>()
     val game: LiveData<SpecificGameItem> get() = _game
 
-    private val _nestedScrollViewVisibility = MutableLiveData<Boolean>()
-    val nestedScrollViewVisibility: LiveData<Boolean> get() = _nestedScrollViewVisibility
+    private val _scrollViewVisibility = MutableLiveData<Boolean>()
+    val scrollViewVisibility: LiveData<Boolean> get() = _scrollViewVisibility
 
     private val _textViewNoInternetVisibility = MutableLiveData<Boolean>()
     val textViewNoInternetVisibility: LiveData<Boolean> get() = _textViewNoInternetVisibility
@@ -39,7 +39,7 @@ class DetailViewModel @Inject constructor(private val getGameByIdUseCase: GetGam
 
                 val game = getGameByIdUseCase(id)
                 _game.value = game
-                showNestedScrollView()
+                showScrollView()
 
             } catch (e: Exception) { // No internet connection.
 
@@ -51,9 +51,9 @@ class DetailViewModel @Inject constructor(private val getGameByIdUseCase: GetGam
 
     }
 
-    private fun showNestedScrollView() {
+    private fun showScrollView() {
 
-        _nestedScrollViewVisibility.value = true
+        _scrollViewVisibility.value = true
         _textViewNoInternetVisibility.value = false
         _progressBarVisibility.value = false
 
@@ -61,7 +61,7 @@ class DetailViewModel @Inject constructor(private val getGameByIdUseCase: GetGam
 
     private fun showTextViewNoInternet() {
 
-        _nestedScrollViewVisibility.value = false
+        _scrollViewVisibility.value = false
         _textViewNoInternetVisibility.value = true
         _progressBarVisibility.value = false
 
@@ -69,7 +69,7 @@ class DetailViewModel @Inject constructor(private val getGameByIdUseCase: GetGam
 
     private fun showProgressBar() {
 
-        _nestedScrollViewVisibility.value = false
+        _scrollViewVisibility.value = false
         _textViewNoInternetVisibility.value = false
         _progressBarVisibility.value = true
 
