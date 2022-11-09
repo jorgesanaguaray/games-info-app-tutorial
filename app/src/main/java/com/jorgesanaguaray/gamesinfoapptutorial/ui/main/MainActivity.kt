@@ -1,4 +1,4 @@
-package com.jorgesanaguaray.gamesinfoapptutorial
+package com.jorgesanaguaray.gamesinfoapptutorial.ui.main
 
 import android.content.Intent
 import android.net.Uri
@@ -8,9 +8,8 @@ import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
 import coil.load
+import com.jorgesanaguaray.gamesinfoapptutorial.R
 import com.jorgesanaguaray.gamesinfoapptutorial.databinding.ActivityMainBinding
-import com.jorgesanaguaray.gamesinfoapptutorial.ui.GameAdapter
-import com.jorgesanaguaray.gamesinfoapptutorial.ui.MainViewModel
 import com.jorgesanaguaray.gamesinfoapptutorial.ui.detail.DetailActivity
 import com.jorgesanaguaray.gamesinfoapptutorial.util.Constants.Companion.KEY_GAME_ID
 import dagger.hilt.android.AndroidEntryPoint

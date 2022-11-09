@@ -1,4 +1,4 @@
-package com.jorgesanaguaray.gamesinfoapptutorial.ui
+package com.jorgesanaguaray.gamesinfoapptutorial.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
