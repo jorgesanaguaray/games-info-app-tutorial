@@ -2,4 +2,12 @@
     <string name="app_name">GamesInfoAppTutorial</string>
     <string name="go_to_the_game_page">Go to the game page</string>
     <string name="no_internet_connection">No internet connection</string>
+    <string name="game_information">Game Information</string>
+    <string name="status">Status:</string>
+    <string name="genre">Genre:</string>
+    <string name="platform">Platform:</string>
+    <string name="publisher">Publisher:</string>
+    <string name="developer">Developer:</string>
+    <string name="release_date">Release date:</string>
+    <string name="menu_detail">Detail</string>
 </resources>
