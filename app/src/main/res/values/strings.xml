@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GamesInfoAppTutorial</string>
     <string name="go_to_the_game_page">Go to the game page</string>
+    <string name="no_internet_connection">No internet connection</string>
 </resources>
