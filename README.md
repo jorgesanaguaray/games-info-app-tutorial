@@ -47,4 +47,4 @@ An Android app that uses Retrofit to consume a gaming API. The app allows users 
 
 [Tutorial on YouTube](https://youtu.be/D7lUPlUwS24)
 
-![App Screenshot](https://pbs.twimg.com/media/FhUilFzXoAQ6QH7?format=jpg&name=large)
+![App Screenshot](https://pbs.twimg.com/media/FkN2eyTXoAA7NkC?format=jpg&name=large)
